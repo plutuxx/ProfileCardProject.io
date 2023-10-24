@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url(font/KumbhSans-VariableFont_YOPQ\,wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans';
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.bg-pattern-top {
+    position: fixed;
+    right: 50%;
+    bottom: 35%;
+    z-index: 1;
+}
+
+.bg-pattern-bottom {
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    z-index: 1;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 350px;
+    border-radius: 15px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.pattern-card img {
+    border-radius: 15px 15px 0 0;
+    display: block;
+}
+
+.info-container {
+    width: 100%;
+    height: 210px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.avatar {
+    position: absolute;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    top: -50%;
+    transform: translateY(50%);
+}
+
+.info-box-p1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 0 40px 20px 40px;
+}
+
+.info-box-p1 div {
+    display: flex;
+}
+
+.age {
+    font-weight: 500;
+    color: hsl(227, 10%, 46%);
+    margin: 0 0 0 8px;
+}
+
+.city {
+    font-size: 14px;
+    color: hsl(227, 10%, 46%);
+    margin: 9px 0 0 0;
+}
+
+.info-box-p2 {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid hsla(0, 0%, 59%, 0.226);
+
+}
+
+.statistics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.statistics p {
+    color: hsl(0, 0%, 59%);
+    font-size: 12px;
+    margin-top: 4px;
+}
